@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>tressreduceren</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Relief App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stress Relief App</h1>
+
+        <!-- Stemming Check-in -->
+        <section id="welcome-section">
+            <h2>Welkom! Hoe voel je je vandaag?</h2>
+            <select id="mood-select">
+                <option value="ontspannen">Ontspannen</option>
+                <option value="gestrest">Gestrest</option>
+                <option value="angstig">Angstig</option>
+                <option value="moe">Moe</option>
+            </select>
+            <button onclick="checkMood()">Bevestig</button>
+            <div id="mood-advice"></div>
+        </section>
+
+        <!-- Aanbevolen Hulpmiddelen -->
+        <section id="recommendations-section">
+            <h2>Aanbevolen hulpmiddelen voor jou</h2>
+            <div id="recommendations"></div>
+        </section>
+
+        <!-- Ademhalingsoefening -->
+        <section id="breathing-section">
+            <h2>Ademhalingsoefening</h2>
+            <p>Volg de ademhaling: inademen, vasthouden, en uitademen.</p>
+            <div id="breath-circle"></div>
+            <button onclick="startBreathingExercise()">Start Ademhalingsoefening</button>
+        </section>
+
+        <!-- Dankbaarheidslijst -->
+        <section id="gratitude-section">
+            <h2>Dingen waar ik dankbaar voor ben</h2>
+            <textarea id="gratitude-input" placeholder="Wat waardeer je vandaag?"></textarea>
+            <button onclick="saveGratitude()">Bewaar</button>
+            <div id="gratitude-log"></div>
+        </section>
+
+        <!-- Dagboek -->
+        <section id="journal-section">
+            <h2>Dagboek</h2>
+            <textarea id="journal-entry" placeholder="Schrijf je gedachten hier..."></textarea>
+            <button onclick="saveJournalEntry()">Bewaar</button>
+            <div id="journal-entries"></div>
+        </section>
+
+        <!-- Dagelijkse Affirmatie -->
+        <section id="affirmation-section">
+            <h2>Dagelijkse Affirmatie</h2>
+            <p id="daily-affirmation">"Je bent sterker dan je denkt."</p>
+        </section>
+
+        <!-- Meditatie Oefening -->
+        <section id="meditation-section">
+            <h2>Meditatie</h2>
+            <button onclick="startMeditation()">Start Meditatie</button>
+            <audio id="meditation-audio" controls>
+                <source src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/relaxing-music-119247.mp3" type="audio/mp3">
+                Uw browser ondersteunt geen audio-element.
+            </audio>
+        </section>
+
+        <!-- Muziek luisteren -->
+        <section id="music-section">
+            <h2>Luister naar rustgevende muziek</h2>
+            <audio id="music-audio" controls>
+                <source src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/relaxing-music-119247.mp3" type="audio/mp3">
+                Uw browser ondersteunt geen audio-element.
+            </audio>
+        </section>
+
+        <!-- Rustgevende Afbeeldingen -->
+        <section id="image-gallery-section">
+            <h2>Rustgevende Afbeeldingen</h2>
+            <img src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/56588969-Fotobehang-Rustgevende-waterpartij.jpg" alt="Rustgevende waterpartij">
+            <img src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/sunset-4122604_640.jpg" alt="Zonsondergang">
+        </section>
+
+        <!-- Rustgevende Video's -->
+        <section id="video-section">
+            <h2>Rustgevende Video's</h2>
+            <video controls width="100%">
+                <source src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/download%20(2).mp4" type="video/mp4">
+                Uw browser ondersteunt geen video-element.
+            </video>
+            <video controls width="100%">
+                <source src="http://www.cursus-fotografie.nl/userfiles/files/lol/pdf/pdf%202/download%20(4).mp4" type="video/mp4">
+                Uw browser ondersteunt geen video-element.
+            </video>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
